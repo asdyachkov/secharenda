@@ -1,0 +1,4 @@
+aiogram==2.16
+environs==8.0.0
+psycopg2
+pytz
