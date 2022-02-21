@@ -472,8 +472,6 @@ async def day_out_zapis(call: CallbackQuery, state: FSMContext):
 async def end_zapis(call: CallbackQuery, state: FSMContext):
     await call.message.edit_reply_markup(reply_markup=None)
     await call.answer(cache_time=1)
-    day = str(call.data)[6::]
-    await state.update_data(answer_day=day)
     data = await state.get_data()
     month = data.get('answer_month')
     now_month = 0
